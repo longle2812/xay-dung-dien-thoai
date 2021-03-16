@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form style="border: 1px solid black; width: 400px; height: 200px">
+        <h2> NOKIA PHONE <span id="nOn"></span></h2>
+        <button type="button" id="nokiaStatus" onclick="nokia.showStatus()"> Check Status </button>
+        <br>
+        <button type="button" id="nokiaPower" onclick="nokia.turnOn()"> Power Button</button>
+        <br>
+        <input id ="nokiaInput">
+        <button type="button" id ="nokiaSendSMS" onclick="nokia.sendSMS('1')"> Send SMS </button>
+        <br>
+        <button type="button" id ="nokiaCheckSMS" onclick="nokia.checkInbox('1')"> Check Inbox </button>
+    </form>
+    <hr>
+    <form style="border: 1px solid black; width: 400px; height: 200px">
+        <h2> IPHONE </h2>
+        <button type="button" id="iphoneStatus" onclick="iphone.showStatus()"> Check Status </button>
+        <br>
+        <button type="button" id="iphonePower" onclick="iphone.turnOn()"> Power Button</button>
+        <br>
+        <input id ="iphoneInput">
+        <button type="button" id ="iphoneSendSMS" onclick="iphone.sendSMS('2')"> Send SMS </button>
+        <br>
+        <button type="button" id ="iphoneCheckSMS" onclick="iphone.checkInbox('2')"> Check Inbox </button>
+    </form>
+</body>
+<script src="script.js">
+</script>
+</html>
